@@ -11,9 +11,9 @@ interface MainNavProps {
 const MainNav: React.FC<MainNavProps> = ({ data }) => {
   const pathName = usePathname();
   const routes = data.map((route) => ({
-    href: `/categories/${route.id}`,
+    href: `/category/${route.id}`,
     label: route.name,
-    active: pathName === `/categories/${route.id}`,
+    active: pathName === `/category/${route.id}`,
   }));
   return (
     <nav className="mx-6 flex items-center space-x-4 lg:space-x-6">
