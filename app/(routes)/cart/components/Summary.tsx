@@ -53,6 +53,7 @@ const Summary = () => {
       <Button
         onClick={onCheckout}
         disabled={items.length === 0}
+        style={items.length === 0 ? { opacity: "40%" } : { opacity: "100%" }}
         className="w-full mt-6"
       >
         Checkout
